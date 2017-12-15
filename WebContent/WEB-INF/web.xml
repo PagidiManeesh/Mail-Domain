@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Mailchatting</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+    	<servlet-name>Register</servlet-name>
+    	<servlet-class>com.msg.pkg.Register</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>Register</servlet-name>
+    	<url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+        <servlet>
+    	<servlet-name>Signin</servlet-name>
+    	<servlet-class>com.msg.pkg.Signin</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>Signin</servlet-name>
+    	<url-pattern>/Signin</url-pattern>
+    </servlet-mapping>
+    
+         <servlet>
+    	<servlet-name>inboxservice</servlet-name>
+    	<servlet-class>com.msg.pkg.inboxservice</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>inboxservice</servlet-name>
+    	<url-pattern>/inboxservice</url-pattern>
+    </servlet-mapping>
+             <servlet>
+    	<servlet-name>sendmsg</servlet-name>
+    	<servlet-class>com.msg.pkg.sendmsg</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>sendmsg</servlet-name>
+    	<url-pattern>/sendmsg</url-pattern>
+    </servlet-mapping>
+             <servlet>
+    	<servlet-name>sentmessage</servlet-name>
+    	<servlet-class>com.msg.pkg.sentmessage</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>sentmessage</servlet-name>
+    	<url-pattern>/sentmessage</url-pattern>
+    </servlet-mapping>
+             <servlet>
+    	<servlet-name>deletemessage</servlet-name>
+    	<servlet-class>com.msg.pkg.deletemessage</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>deletemessage</servlet-name>
+    	<url-pattern>/deletemessage</url-pattern>
+    </servlet-mapping>
+   <servlet>
+    	<servlet-name>getmails</servlet-name>
+    	<servlet-class>com.msg.pkg.getmails</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>getmails</servlet-name>
+    	<url-pattern>/getmails</url-pattern>
+    </servlet-mapping>
+   <servlet>
+    	<servlet-name>getmsg</servlet-name>
+    	<servlet-class>com.msg.pkg.getmsg</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>getmsg</servlet-name>
+    	<url-pattern>/getmsg</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>Setnewpassword</servlet-name>
+    	<servlet-class>com.msg.pkg.Setnewpassword</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>Setnewpassword</servlet-name>
+    	<url-pattern>/Setnewpassword</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>getmessage</servlet-name>
+    	<servlet-class>com.msg.pkg.getmessage</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>getmessage</servlet-name>
+    	<url-pattern>/getmessage</url-pattern>
+    </servlet-mapping>
+            <servlet>
+    	<servlet-name>setfolder</servlet-name>
+    	<servlet-class>com.msg.pkg.setfolder</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>setfolder</servlet-name>
+    	<url-pattern>/setfolder</url-pattern>
+    </servlet-mapping>
+     <servlet>
+    	<servlet-name>setaddress</servlet-name>
+    	<servlet-class>com.msg.pkg.setaddress</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>setaddress</servlet-name>
+    	<url-pattern>/setaddress</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>getfolder</servlet-name>
+    	<servlet-class>com.msg.pkg.getfolder</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>getfolder</servlet-name>
+    	<url-pattern>/getfolder</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>getaddbook</servlet-name>
+    	<servlet-class>com.msg.pkg.getaddbook</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>getaddbook</servlet-name>
+    	<url-pattern>/getaddbook</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>editaddr</servlet-name>
+    	<servlet-class>com.msg.pkg.editaddr</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>editaddr</servlet-name>
+    	<url-pattern>/editaddr</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>editfolder</servlet-name>
+    	<servlet-class>com.msg.pkg.editfolder</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>editfolder</servlet-name>
+    	<url-pattern>/editfolder</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>deleteadd</servlet-name>
+    	<servlet-class>com.msg.pkg.deleteadd</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>deleteadd</servlet-name>
+    	<url-pattern>/deleteadd</url-pattern>
+    </servlet-mapping>
+   <servlet>
+    	<servlet-name>deletefolder</servlet-name>
+    	<servlet-class>com.msg.pkg.deletefolder</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>deletefolder</servlet-name>
+    	<url-pattern>/deletefolder</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>deletefol</servlet-name>
+    	<servlet-class>com.msg.pkg.deletefol</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>deletefol</servlet-name>
+    	<url-pattern>/deletefol</url-pattern>
+    </servlet-mapping>
+        <servlet>
+    	<servlet-name>selectfolder</servlet-name>
+    	<servlet-class>com.msg.pkg.selectfolder</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>selectfolder</servlet-name>
+    	<url-pattern>/selectfolder</url-pattern>
+    </servlet-mapping>
+            <servlet>
+    	<servlet-name>logout</servlet-name>
+    	<servlet-class>com.msg.pkg.logout</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>logout</servlet-name>
+    	<url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+</web-app>
